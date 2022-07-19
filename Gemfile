@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -70,3 +70,11 @@ group :production do
   # Use pg as the database for Active Record
   # gem 'pg', '~> 1.3.1'
 end
+
+# I added this 3 gem
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+
+# added to visualize database records
+gem 'rails_admin', '~> 2.0'
